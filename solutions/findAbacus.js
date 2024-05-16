@@ -12,7 +12,16 @@ The wrong object may contain the key abacus but with false value! There may only
 */
 
 function findAbacus(array) {
-
+    let a = null
+    for(let i = 0; i < array.length;i++){
+        if(array[i].contains("abacus")){
+            if(array.abacus === true){
+                a = i
+            }
+        }
+    }
+    return a
 }
+
 
 module.exports = findAbacus;
